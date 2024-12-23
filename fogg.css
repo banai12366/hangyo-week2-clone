@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    &::selection {
+        background-color: #F6D1E3;
+        color: brown;
+    }
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* buttons sharing uniform styles  */
+.button {
+    height: fit-content;
+    border: none
+}
+
+.hangyo-logo {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.header-block {
+    height: 160px;
+    background-color: #FFCFD4;
+    position: relative;
+
+}
+
+.navbar li:first-child {
+    color: #da1271;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 2px;
+}
+
+.navbar li {
+    list-style: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #da1271;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 2px;
+    }
+}
+
+.person-icon i {
+    width: 20px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.offcanvas {
+    background-color: #FFCFD4;
+}
+
+.offcanvas-header {
+    margin-top: 17.4vh;
+    z-index: 3;
+    background-color: white;
+}
+
+.offcanvas-body {
+    background-color: #ffffff;
+}
+
+main {
+    height: fit-content;
+    padding-block-end: 10px !important;
+    width: 100%;
+}
+
+
+.section {
+    height: 50vh;
+}
+
+.cards_Section {
+    background-color: #fdf6fa;
+    height: fit-content;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.grid-image-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+}
+
+.grid-image-layout div {
+    border-radius: 10px;
+    transition: transform 0.3s linear;
+
+    &:hover {
+        transform: scale(0.9);
+        z-index: 2;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.31);
+    }
+}
+
+
+/* grid layout images  */
+.img1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background: url("./media/grid-section/img1.webp") no-repeat center/cover;
+    overflow: hidden;
+}
+
+.img2 {
+    grid-row: 1;
+    grid-column: 2;
+    background: url("./media/grid-section/row1-col2.webp") no-repeat center/cover;
+}
+
+.img3 {
+    grid-row: 1;
+    grid-column: 3;
+    background: url("./media/grid-section/row1-col3.webp") no-repeat center/cover;
+}
+
+.img4 {
+    grid-row: 1;
+    grid-column: 4;
+    background: url("./media/grid-section/row1-col4.webp") no-repeat center/cover;
+}
+
+.img5 {
+    grid-row: 2;
+    grid-column: 2;
+    background: url("./media/grid-section/row2-col2.webp") no-repeat center/cover;
+}
+
+.img6 {
+    grid-row: 2;
+    grid-column: 3;
+    background: url("./media/grid-section/row2-col3.webp") no-repeat center/cover;
+}
+
+.img7 {
+    grid-row: 2;
+    grid-column: 4;
+    background: url("./media/grid-section/row2-col4.webp") no-repeat center/cover;
+}
+
+.para-ice1 {
+    background: url("./media/paragraphSection/icecream1.avif") no-repeat center/cover;
+}
+
+.para-badge2 {
+    background: url("./media/paragraphSection/badge2.svg") no-repeat center/cover;
+}
+
+.para-badge3 {
+    background: url("./media/paragraphSection/para-badge3.svg") no-repeat center/cover;
+    object-fit: fit;
+}
+
+.footer-before-container {
+    height: 90vh;
+}
+
+.footer-before-container-carousel {
+    height: 60vh;
+    background-color: #FFCFD4;
+}
+
+
+.footer {
+    height: 90vh;
+    width: 100%;
+}
+
+ul>li {
+    list-style: none;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.footer-icons i {
+    color: #da1271;
+
+    &:hover {
+        color: #da126f81;
+        cursor: pointer;
+    }
+}
+
+footer .footer-list {
+    font-size: 14px;
+    color: #da1271;
+}
+
+footer .policy {
+    font-size: 10px;
+    color: #da1271;
+}

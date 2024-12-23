@@ -1,0 +1,11 @@
+@media (width<=989px) {
+    .header-block {
+        height: 116px;
+    }
+}
+
+@media (width <= 992px) {
+    .footer-before-container {
+        height: 120vh;
+    }
+}
